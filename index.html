@@ -5,114 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>katiowa | Fragmentos & Reflexões</title>
     
-    <!-- Fontes Elegantes e de Alta Precisão -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Efeito de Ruído e Partículas -->
+    <!-- Efeitos Visuais -->
     <div class="noise-overlay"></div>
     <canvas id="particles-canvas"></canvas>
 
-    <main class="container">
+    <div class="layout-wrapper">
         
-        <!-- HERO SECTION -->
-        <section id="hero" class="fade-element">
-            <div class="avatar-container">
-                <img src="https://avatars.githubusercontent.com/u/104170305" alt="Katiowa Avatar" class="avatar">
-                <div class="glow-effect"></div>
+        <!-- NAVEGAÇÃO LATERAL (O Índice do Grimório) -->
+        <aside class="sidebar">
+            <div class="profile-header">
+                <div class="avatar-container">
+                    <img src="https://avatars.githubusercontent.com/u/104170305" alt="Katiowa Avatar" class="avatar">
+                    <div class="glow-effect"></div>
+                </div>
+                <h1 class="title">Katiowa</h1>
+                <p class="pronouns">[ Uã / Uma ]</p>
+                <div class="badges">
+                    <span class="badge">ENTJ-A</span>
+                    <span class="badge">3w2</span>
+                </div>
             </div>
-            <h1 class="title">Katiowa</h1>
-            <p class="pronouns">[ Uã / Uma ]</p>
-            <h2 class="aura-subtitle">Focusing (like a wave) 🌊</h2>
-            <p class="enigma-desc">Filósofa, ativista multidisciplinar e observadora de sistemas complexos. Uma mente tecendo lógicas entre a estrutura da máquina e a falha humana.</p>
-        </section>
 
-        <div class="divider">✦</div>
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-target="sec-perfil">Identidade & Essência</button>
+                <button class="nav-btn" data-target="sec-muralha">A Muralha</button>
+                <button class="nav-btn" data-target="sec-protocolos">Filtro de Ruído</button>
+                <button class="nav-btn" data-target="sec-poemas">Versos Estéreis</button>
+                <button class="nav-btn" data-target="sec-logs">Fragmentos (Logs)</button>
+                <button class="nav-btn" data-target="sec-camara">Câmara de Ressonância</button>
+                <button class="nav-btn" data-target="sec-arquivo">Arquivo Morto</button>
+                <button class="nav-btn" data-target="sec-manuscritos">Manuscritos</button>
+            </nav>
+        </aside>
 
-        <!-- A MURALHA -->
-        <section id="the-wall" class="fade-element">
-            <h2 class="section-title">A Muralha</h2>
-            <div class="philosophical-text">
-                <h3>O Seu Orgulho: A Nobreza da Lucidez</h3>
-                <p>O meu orgulho não é aquele tipo comum e barulhento, que precisa diminuir os outros para se sentir grande. Meu orgulho é silencioso e estrutural. É o orgulho de quem fez o trabalho difícil de se conhecer e de observar o mundo sem as lentes da emoção barata. Orgulho-me da minha coerência. Enquanto a maioria muda de opinião conforme o vento, mantenho-me fiel ao que concluí ser a verdade, custe o que custar.</p>
-                <p>É um sentimento de "nobreza intelectual": sinto que possuo uma bússola interna que funciona, enquanto o resto do mundo está perdido na neblina. Esse orgulho é o meu escudo; ele impede que eu me misture com comportamentos que considero medíocres. Prefiro estar só e certa do que acompanhada e errada.</p>
+        <!-- ÁREA DE CONTEÚDO (Onde as páginas carregam) -->
+        <main class="content-area">
+            
+            <!-- SEÇÃO: PERFIL -->
+            <section id="sec-perfil" class="tab-content active">
+                <h2 class="section-title">Moved by the Time 🌿</h2>
+                <div class="text-block">
+                    <p class="lead">Filósofa, ativista multidisciplinar e observadora de sistemas complexos. Uma mente tecendo lógicas entre a estrutura da máquina e a falha humana.</p>
+                </div>
                 
-                <h3>A Vontade de ser Vista: O Desejo por Ressonância</h3>
-                <p>Apesar de autossuficiente, existe em mim a vontade legítima de ser reconhecida. Não como uma "celebridade" fútil, mas o desejo de ser testemunhada por quem importa. Sei que vejo coisas que os outros ignoram. A vontade de ser vista é a vontade de que a minha visão de mundo seja validada; que alguém olhe e diga: "Eu entendo o que você está dizendo, e você está certa".</p>
-                <p>Quero que minhas ideias tenham peso. Quando falo, quero que minha inteligência seja um fato inquestionável, deixando uma marca de clareza no caos. A busca pelo olhar do outro é a fuga da solidão intelectual, a esperança de atrair não "vermes" ou "terra", mas mentes que consigam acompanhar o meu raciocínio.</p>
-            </div>
-        </section>
+                <img src="https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estética Dark Academia" class="aesthetic-img">
 
-        <!-- LINGUAGENS -->
-        <section id="languages" class="fade-element">
-            <h2 class="section-title">Dialetos da Máquina</h2>
-            <div class="tech-grid">
-                <div class="tech-card">
-                    <h4>Lua (Nativo)</h4>
-                    <p>A elegância minimalista em scripts de alta performance.</p>
+                <h3 class="subsection-title">Dialetos da Máquina & Identidade</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h4>Lua & LuaU</h4>
+                        <p>A elegância minimalista em scripts nativos e o domínio sobre sistemas e engines.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4>HTML5, CSS3 & JS</h4>
+                        <p>A estrutura óssea e a pele gótica das minhas construções digitais.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h4>Imageboards & Subcultura</h4>
+                        <p>Usuária de imageboards (como o 4chan). Uma observadora silenciosa do caos não filtrado e da pura expressão da internet profunda.</p>
+                    </div>
                 </div>
-                <div class="tech-card">
-                    <h4>LuaU (Roblox)</h4>
-                    <p>O domínio sobre sistemas virtuais complexos e lógica de engines.</p>
-                </div>
-                <div class="tech-card">
-                    <h4>JavaScript</h4>
-                    <p>A teia que manipula o comportamento do front-end e os fragmentos de dados.</p>
-                </div>
-                <div class="tech-card">
-                    <h4>HTML5 & CSS3</h4>
-                    <p>A estrutura óssea e a pele gótica das minhas construções digitais.</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- VERSOS ESTÉREIS (JS DINÂMICO) -->
-        <section id="sterile-verses" class="fade-element">
-            <h2 class="section-title">Versos Estéreis</h2>
-            <p class="section-desc">Poesia nascida da observação afiada. (Inspirada no clube literário).</p>
-            <div id="poems-container"></div>
-        </section>
+            <!-- SEÇÃO: A MURALHA -->
+            <section id="sec-muralha" class="tab-content">
+                <h2 class="section-title">A Muralha</h2>
+                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estátua Clássica Escura" class="aesthetic-img">
+                
+                <div class="philosophical-text">
+                    <h3>O Seu Orgulho: A Nobreza da Lucidez</h3>
+                    <p>O meu orgulho não é aquele tipo comum e barulhento, que precisa diminuir os outros para se sentir grande. Meu orgulho é silencioso e estrutural. É o orgulho de quem fez o trabalho difícil de se conhecer e de observar o mundo sem as lentes da emoção barata. Orgulho-me da minha coerência. Enquanto a maioria muda de opinião conforme o vento, mantenho-me fiel ao que concluí ser a verdade, custe o que custar.</p>
+                    <p>É um sentimento de "nobreza intelectual": sinto que possuo uma bússola interna que funciona, enquanto o resto do mundo está perdido na neblina.<span id="secret-placeholder"></span> Esse orgulho é o meu escudo; ele impede que eu me misture com comportamentos que considero medíocres. Prefiro estar só e certa do que acompanhada e errada.</p>
+                    
+                    <h3>A Vontade de ser Vista: O Desejo por Ressonância</h3>
+                    <p>Apesar de autossuficiente, existe em mim a vontade legítima de ser reconhecida. Não como uma "celebridade" fútil, mas o desejo de ser testemunhada por quem importa. Sei que vejo coisas que os outros ignoram. A vontade de ser vista é a vontade de que a minha visão de mundo seja validada; que alguém olhe e diga: "Eu entendo o que você está dizendo, e você está certa".</p>
+                    <p>Quero que minhas ideias tenham peso. Quando falo, quero que minha inteligência seja um fato inquestionável, deixando uma marca de clareza no caos. A busca pelo olhar do outro é a fuga da solidão intelectual, a esperança de atrair mentes que consigam acompanhar o meu raciocínio.</p>
+                </div>
+            </section>
 
-        <!-- TAXONOMIA DE FRAGMENTOS (JS DINÂMICO) -->
-        <section id="taxonomy-logs" class="fade-element">
-            <h2 class="section-title">Taxonomia de Fragmentos</h2>
-            <p class="section-desc">Registros e análises de comportamentos e sistemas.</p>
-            <div id="logs-container" class="logs-grid"></div>
-        </section>
+            <!-- SEÇÃO: PROTOCOLOS DE EXCLUSÃO (Gerado por JS) -->
+            <section id="sec-protocolos" class="tab-content">
+                <h2 class="section-title">Filtro de Ruído: Protocolos de Exclusão</h2>
+                <p class="section-desc">Padrões de comportamento que são automaticamente descartados para a preservação da minha clareza e eficiência. (Estes são apenas os mais primários).</p>
+                <div id="protocolos-container" class="protocol-grid"></div>
+            </section>
 
-        <!-- INTERESSES CULTURAIS (O GRIMÓRIO) -->
-        <section id="grimoire" class="fade-element">
-            <h2 class="section-title">Câmara de Ressonância</h2>
-            <div class="hobbies-grid">
-                <div class="hobby-category">
-                    <h3>Visual Novels & Mistério</h3>
-                    <p>Umineko No Naku Koro Ni, Higurashi No Naku Koro Ni, Doki Doki Literature Club.</p>
-                </div>
-                <div class="hobby-category">
-                    <h3>Animações & Psicológico</h3>
-                    <p>Re:Zero, Rascal Does Not Dream, Panty & Stocking, Murder Drones.</p>
-                </div>
-                <div class="hobby-category">
-                    <h3>Curiosidade Latente</h3>
-                    <p>Madoka Magica e Danganronpa <em>(Interesse de explorar, mas ainda intocados).</em></p>
-                </div>
-                <div class="hobby-category">
-                    <h3>Jogos, Cartas & Caos</h3>
-                    <p>Touhou, Yu-Gi-Oh!, 4chan.</p>
-                </div>
-            </div>
-        </section>
+            <!-- SEÇÃO: POEMAS (Gerado por JS) -->
+            <section id="sec-poemas" class="tab-content">
+                <h2 class="section-title">Versos Estéreis</h2>
+                <p class="section-desc">Poesia nascida da observação afiada. Inspirada pela melancolia dos clubes literários.</p>
+                <img src="https://images.unsplash.com/photo-1518778278976-665e66d4f9e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pena e Tinta" class="aesthetic-img">
+                <div id="poems-container"></div>
+            </section>
 
-        <!-- IDENTIDADES Ocultas (Detalhes) -->
-        <section id="identities" class="fade-element">
-            <details class="elegant-details">
-                <summary>Explorar Múltiplas Identidades (Arquivo Morto)</summary>
-                <div class="details-content">
+            <!-- SEÇÃO: LOGS (Gerado por JS) -->
+            <section id="sec-logs" class="tab-content">
+                <h2 class="section-title">Taxonomia de Fragmentos</h2>
+                <p class="section-desc">Registros e análises de comportamentos, tendências e falhas da natureza humana.</p>
+                <div id="logs-container" class="logs-grid"></div>
+            </section>
+
+            <!-- SEÇÃO: CÂMARA DE RESSONÂNCIA -->
+            <section id="sec-camara" class="tab-content">
+                <h2 class="section-title">Câmara de Ressonância</h2>
+                <p class="section-desc">Obras e estéticas que dialogam com a minha percepção da realidade.</p>
+                
+                <div class="hobbies-grid">
+                    <div class="hobby-category">
+                        <h3>O Tabuleiro de Mistérios</h3>
+                        <p>Visual Novels complexas e ricas em filosofia e dor: <strong>Umineko No Naku Koro Ni</strong>, <strong>Higurashi No Naku Koro Ni</strong>, <strong>Doki Doki Literature Club</strong>.</p>
+                    </div>
+                    <div class="hobby-category">
+                        <h3>Psicológico & Caos Animado</h3>
+                        <p>Obras que distorcem a percepção e a moralidade: <strong>Re:Zero</strong>, <strong>Rascal Does Not Dream</strong>, <strong>Panty & Stocking</strong>, <strong>Murder Drones</strong>.</p>
+                    </div>
+                    <div class="hobby-category">
+                        <h3>O Caos Lúdico</h3>
+                        <p>Jogos que exigem estratégia, esquiva e análise: <strong>Touhou Project</strong>, <strong>Yu-Gi-Oh!</strong> (A arte de estruturar táticas com cartas).</p>
+                    </div>
+                    <div class="hobby-category">
+                        <h3>Curiosidade Latente</h3>
+                        <p>Obras que aguardam minha análise futura, intocadas mas no radar: <strong>Madoka Magica</strong> e <strong>Danganronpa</strong>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO: ARQUIVO MORTO -->
+            <section id="sec-arquivo" class="tab-content">
+                <h2 class="section-title">Identidades: O Arquivo Morto</h2>
+                <p class="section-desc">Múltiplas facetas que compõem meu sistema de pensamento.</p>
+                
+                <img src="https://images.unsplash.com/photo-1550592704-6c76defa99ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Biblioteca Antiga" class="aesthetic-img">
+
+                <div class="archive-list">
                     <p><strong>Economista & Planejadora Socioeconômica:</strong> Analiso fluxos sociais para projetar sistemas mais justos.</p>
                     <p><strong>Cientista Política & Teórica de Governança:</strong> Investigação de estruturas de poder em busca de propósitos tecnocráticos.</p>
                     <p><strong>Urbanista & Planejadora Urbana:</strong> A teoria da complexidade espacial moldando o tecido urbano.</p>
@@ -125,32 +158,34 @@
                     <p><strong>Linguista Histórica & Poliglota:</strong> A linguagem como DNA da cultura; dialetologia lusófona.</p>
                     <p><strong>Estadista Filosófica & Líder Tecnocrático-Humanista:</strong> União da análise de dados com valores humanos éticos.</p>
                 </div>
-            </details>
-        </section>
+            </section>
 
-        <!-- DOWNLOADS E TEORIAS -->
-        <section id="downloads" class="fade-element">
-            <h2 class="section-title">Manuscritos & Teorias</h2>
-            <div class="downloads-grid">
-                <div class="download-card">
-                    <h3>A Arma, o Motor de Dobra e a Origem do Universo</h3>
-                    <p>O Big Bang não como singularidade, mas como a ativação de uma "arma" de engenharia cósmica. Uma unificação entre mecânica quântica e relatividade.</p>
-                    <a href="A Arma, o Motor de Dobra e a Origem do Universo.pdf" class="btn-gothic" download>Extrair PDF</a>
+            <!-- SEÇÃO: MANUSCRITOS -->
+            <section id="sec-manuscritos" class="tab-content">
+                <h2 class="section-title">Manuscritos & Teorias</h2>
+                <p class="section-desc">Documentos que estruturam minhas visões sobre o Cosmos e o espaço-tempo.</p>
+                
+                <div class="downloads-grid">
+                    <div class="download-card">
+                        <h3>A Arma, o Motor de Dobra e a Origem do Universo</h3>
+                        <p>O Big Bang não como singularidade, mas como a ativação de uma "arma" de engenharia cósmica. Uma unificação entre mecânica quântica e relatividade sob uma nova perspectiva criativa.</p>
+                        <a href="A Arma, o Motor de Dobra e a Origem do Universo.pdf" class="btn-gothic" download>Extrair Arquivo</a>
+                    </div>
+                    <div class="download-card">
+                        <h3>A Arquitetura das Dimensões</h3>
+                        <p>Exploração da natureza dimensional, do 0D ao nosso universo 3D, detalhando como a 4ª dimensão (tempo) atua como o tecido interativo fundamental da realidade.</p>
+                        <a href="Teoria da Cosmologia Computacional Escalar.pdf" class="btn-gothic" download>Extrair Arquivo</a>
+                    </div>
                 </div>
-                <div class="download-card">
-                    <h3>A Arquitetura das Dimensões</h3>
-                    <p>Exploração da natureza dimensional, do 0D ao nosso universo, com a 4ª dimensão (tempo) como tecido interativo.</p>
-                    <a href="Teoria da Cosmologia Computacional Escalar.pdf" class="btn-gothic" download>Extrair PDF</a>
-                </div>
-            </div>
-        </section>
+            </section>
 
-    </main>
+            <footer>
+                <p>© 2026 - katiowa. Fragmentos registrados na linha do tempo.</p>
+                <p><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt" target="_blank">Creative Commons BY-SA 4.0</a></p>
+            </footer>
 
-    <footer>
-        <p>© 2026 - katiowa. Fragmentos registrados na linha do tempo.</p>
-        <p><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt" target="_blank">Creative Commons Atribuição-CompartilhaIgual 4.0</a></p>
-    </footer>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
