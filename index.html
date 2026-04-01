@@ -31,27 +31,30 @@
                 <div class="badges">
                     <span class="badge">ENTJ-A</span>
                     <span class="badge">3w2</span>
+                    <span class="badge">Pansexual</span>
+                    <span class="badge">Sapiosexual</span>
                 </div>
             </div>
 
             <nav class="nav-menu">
                 <button class="nav-btn active" data-target="sec-perfil">Identidade & Essência</button>
                 <button class="nav-btn" data-target="sec-muralha">A Muralha</button>
+                <button class="nav-btn" data-target="sec-constante">A Constante</button>
+                <button class="nav-btn" data-target="sec-diretrizes">Diretrizes</button>
                 <button class="nav-btn" data-target="sec-protocolos">Filtro de Ruído</button>
                 <button class="nav-btn" data-target="sec-poemas">Versos Estéreis</button>
                 <button class="nav-btn" data-target="sec-logs">Fragmentos (Logs)</button>
                 <button class="nav-btn" data-target="sec-camara">Câmara de Ressonância</button>
                 <button class="nav-btn" data-target="sec-arquivo">Arquivo Morto</button>
-                <button class="nav-btn" data-target="sec-manuscritos">Manuscritos</button>
             </nav>
         </aside>
 
-        <!-- ÁREA DE CONTEÚDO (Onde as páginas carregam) -->
+        <!-- ÁREA DE CONTEÚDO -->
         <main class="content-area">
             
             <!-- SEÇÃO: PERFIL -->
             <section id="sec-perfil" class="tab-content active">
-                <h2 class="section-title">Moved by the Time 🌿</h2>
+                <h2 class="section-title">🌊 Focusing, like a wave.</h2>
                 <div class="text-block">
                     <p class="lead">Filósofa, ativista multidisciplinar e observadora de sistemas complexos. Uma mente tecendo lógicas entre a estrutura da máquina e a falha humana.</p>
                 </div>
@@ -72,6 +75,10 @@
                         <h4>Imageboards & Subcultura</h4>
                         <p>Usuária de imageboards (como o 4chan). Uma observadora silenciosa do caos não filtrado e da pura expressão da internet profunda.</p>
                     </div>
+                    <div class="tech-card">
+                        <h4>Espectro Cômico (Humor)</h4>
+                        <p>A percepção da quebra de expectativa através do: <strong>Humor Ácido / Negro, Humor Verde, Comédia Física, Humor Seco e Sarcasmo.</strong></p>
+                    </div>
                 </div>
             </section>
 
@@ -83,7 +90,7 @@
                 <div class="philosophical-text">
                     <h3>O Seu Orgulho: A Nobreza da Lucidez</h3>
                     <p>O meu orgulho não é aquele tipo comum e barulhento, que precisa diminuir os outros para se sentir grande. Meu orgulho é silencioso e estrutural. É o orgulho de quem fez o trabalho difícil de se conhecer e de observar o mundo sem as lentes da emoção barata. Orgulho-me da minha coerência. Enquanto a maioria muda de opinião conforme o vento, mantenho-me fiel ao que concluí ser a verdade, custe o que custar.</p>
-                    <p>É um sentimento de "nobreza intelectual": sinto que possuo uma bússola interna que funciona, enquanto o resto do mundo está perdido na neblina.<span id="secret-placeholder"></span> Esse orgulho é o meu escudo; ele impede que eu me misture com comportamentos que considero medíocres. Prefiro estar só e certa do que acompanhada e errada.</p>
+                    <p>É um sentimento de "nobreza intelectual": sinto que possuo uma bússola interna que funciona, enquanto o resto do mundo está perdido na neblina. Esse orgulho é o meu escudo; ele impede que eu me misture com comportamentos que considero medíocres. Prefiro estar só e certa do que acompanhada e errada.</p>
                     
                     <h3>A Vontade de ser Vista: O Desejo por Ressonância</h3>
                     <p>Apesar de autossuficiente, existe em mim a vontade legítima de ser reconhecida. Não como uma "celebridade" fútil, mas o desejo de ser testemunhada por quem importa. Sei que vejo coisas que os outros ignoram. A vontade de ser vista é a vontade de que a minha visão de mundo seja validada; que alguém olhe e diga: "Eu entendo o que você está dizendo, e você está certa".</p>
@@ -91,10 +98,24 @@
                 </div>
             </section>
 
+            <!-- SEÇÃO: A CONSTANTE (Gerado por JS) -->
+            <section id="sec-constante" class="tab-content">
+                <h2 class="section-title">O Equilíbrio da Constante</h2>
+                <p class="section-desc">Paradoxos, posturas e a dualidade da minha arquitetura interna.</p>
+                <div id="constantes-container" class="philosophical-text"></div>
+            </section>
+
+            <!-- SEÇÃO: DIRETRIZES (Gerado por JS) -->
+            <section id="sec-diretrizes" class="tab-content">
+                <h2 class="section-title">A Estética da Soberania</h2>
+                <p class="section-desc">Minhas regras de processamento na interação humana.</p>
+                <div id="diretrizes-container" class="protocol-grid"></div>
+            </section>
+
             <!-- SEÇÃO: PROTOCOLOS DE EXCLUSÃO (Gerado por JS) -->
             <section id="sec-protocolos" class="tab-content">
                 <h2 class="section-title">Filtro de Ruído: Protocolos de Exclusão</h2>
-                <p class="section-desc">Padrões de comportamento que são automaticamente descartados para a preservação da minha clareza e eficiência. (Estes são apenas os mais primários).</p>
+                <p class="section-desc">Padrões de comportamento que são automaticamente descartados para a preservação da minha clareza e eficiência.</p>
                 <div id="protocolos-container" class="protocol-grid"></div>
             </section>
 
@@ -140,40 +161,31 @@
 
             <!-- SEÇÃO: ARQUIVO MORTO -->
             <section id="sec-arquivo" class="tab-content">
-                <h2 class="section-title">Identidades: O Arquivo Morto</h2>
-                <p class="section-desc">Múltiplas facetas que compõem meu sistema de pensamento.</p>
+                <h2 class="section-title">Identidades & Manuscritos</h2>
+                <p class="section-desc">O arquivo morto das minhas múltiplas facetas teóricas.</p>
                 
                 <img src="https://images.unsplash.com/photo-1550592704-6c76defa99ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Biblioteca Antiga" class="aesthetic-img">
 
                 <div class="archive-list">
-                    <p><strong>Economista & Planejadora Socioeconômica:</strong> Analiso fluxos sociais para projetar sistemas mais justos.</p>
-                    <p><strong>Cientista Política & Teórica de Governança:</strong> Investigação de estruturas de poder em busca de propósitos tecnocráticos.</p>
-                    <p><strong>Urbanista & Planejadora Urbana:</strong> A teoria da complexidade espacial moldando o tecido urbano.</p>
-                    <p><strong>Astrônoma & Astrofísica:</strong> Da observação empírica a teorias multidimensionais sobre a realidade.</p>
-                    <p><strong>Cientista Planetária & Paleoclimatóloga:</strong> A história natural da Terra como laboratório.</p>
-                    <p><strong>Bióloga Molecular & Paleobióloga:</strong> A evolução da vida, biomineralização e psicobiologia.</p>
-                    <p><strong>Futuróloga & Engenheira de Futuros:</strong> Prospecção científica para transformar visões em realidade.</p>
+                    <p><strong>Filósofa, Epistemóloga & Futuróloga:</strong> Prospecção científica, investigação da natureza e os limites do conhecimento.</p>
+                    <p><strong>Economista, Cientista Política & Urbanista:</strong> Análise de fluxos sociais, infraestrutura de poder e teoria da complexidade espacial.</p>
+                    <p><strong>Astrônoma, Astrofísica & Cosmóloga:</strong> Da observação empírica às teorias multidimensionais sobre o espaço-tempo.</p>
+                    <p><strong>Cientista Planetária, Paleoclimatóloga & Bióloga:</strong> A evolução da vida, biomineralização e psicobiologia da Terra.</p>
                     <p><strong>Psicóloga Social & Socióloga Crítica:</strong> A intersecção entre o indivíduo e as desigualdades sistêmicas.</p>
-                    <p><strong>Filósofa & Epistemóloga:</strong> A investigação da natureza e dos limites do conhecimento.</p>
                     <p><strong>Linguista Histórica & Poliglota:</strong> A linguagem como DNA da cultura; dialetologia lusófona.</p>
-                    <p><strong>Estadista Filosófica & Líder Tecnocrático-Humanista:</strong> União da análise de dados com valores humanos éticos.</p>
+                    <p><strong>Estadista Filosófica & Líder Tecnocrático-Humanista:</strong> União da análise de dados com valores humanos éticos e inegociáveis.</p>
                 </div>
-            </section>
 
-            <!-- SEÇÃO: MANUSCRITOS -->
-            <section id="sec-manuscritos" class="tab-content">
-                <h2 class="section-title">Manuscritos & Teorias</h2>
-                <p class="section-desc">Documentos que estruturam minhas visões sobre o Cosmos e o espaço-tempo.</p>
-                
+                <h3 class="subsection-title">Teorias e Extrações</h3>
                 <div class="downloads-grid">
                     <div class="download-card">
                         <h3>A Arma, o Motor de Dobra e a Origem do Universo</h3>
-                        <p>O Big Bang não como singularidade, mas como a ativação de uma "arma" de engenharia cósmica. Uma unificação entre mecânica quântica e relatividade sob uma nova perspectiva criativa.</p>
+                        <p>O Big Bang não como singularidade, mas como a ativação de uma "arma" de engenharia cósmica. Uma unificação audaciosa.</p>
                         <a href="A Arma, o Motor de Dobra e a Origem do Universo.pdf" class="btn-gothic" download>Extrair Arquivo</a>
                     </div>
                     <div class="download-card">
                         <h3>A Arquitetura das Dimensões</h3>
-                        <p>Exploração da natureza dimensional, do 0D ao nosso universo 3D, detalhando como a 4ª dimensão (tempo) atua como o tecido interativo fundamental da realidade.</p>
+                        <p>Exploração da natureza dimensional, detalhando como a 4ª dimensão atua como o tecido interativo fundamental da realidade.</p>
                         <a href="Teoria da Cosmologia Computacional Escalar.pdf" class="btn-gothic" download>Extrair Arquivo</a>
                     </div>
                 </div>
